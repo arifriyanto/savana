@@ -1,0 +1,35 @@
+@mixin linear-gradient($fromColor, $toColor) {
+  background-color: $toColor; /* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(bottom, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(bottom, $fromColor, $toColor); /* FF3.6 */
+  background-image:     -ms-linear-gradient(bottom, $fromColor, $toColor); /* IE10 */
+  background-image:      -o-linear-gradient(bottom, $fromColor, $toColor); /* Opera 11.10+ */
+  background-image:         linear-gradient(bottom, $fromColor, $toColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}
+
+@mixin animate-transition ($what, $when, $how) {
+  -webkit-transition: $what $when $how;
+  -moz-transition: $what $when $how;
+  -o-transition: $what $when $how;
+  transition: $what $when $how;
+}
+
+// Center block
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+  content: "";
+  display: table;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+  clear: both;
+}

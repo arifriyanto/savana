@@ -1,0 +1,94 @@
+/*!
+Theme Name: Savana
+Theme URI: http://arifriyanto.com/portfolio/savana/
+Author: Arif Riyanto
+Author URI: http://arifriyanto.com
+Description: Theme that you want. Maybe.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: borobudur
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Savana is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0  Base
+2.0  FontAwesome
+3.0  Elements
+4.0  Navigation
+  4.1 Links
+  4.2 Menus
+5.0  Modules
+6.0  Site
+  6.1 Header
+  6.2 Homepage
+  6.3 Post and Pages
+    6.3.1 Cover
+    6.3.2 Main
+    6.3.3 Post
+    6.3.4 Portfolio
+7.0  Media
+  7.1 Captions
+  7.2 Galleries
+8.0  Responsive
+
+--------------------------------------------------------------*/
+
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface);
+
+@import "bootstrap-variables";
+@import "mixins/mixins";
+
+/*--------------------------------------------------------------
+1.0 Bootstrap
+--------------------------------------------------------------*/
+@import "layout/bootstrap";
+
+/*--------------------------------------------------------------
+2.0 FontAwesome
+--------------------------------------------------------------*/
+@import "vendors/font-awesome";
+
+/*--------------------------------------------------------------
+3.0 Elements
+--------------------------------------------------------------*/
+@import "elements/elements";
+
+/*--------------------------------------------------------------
+4.0 Navigation
+--------------------------------------------------------------*/
+@import "navigation/navigation";
+
+/*--------------------------------------------------------------
+5.0 Modules
+--------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+6.0 Site
+--------------------------------------------------------------*/
+@import "site/site";
+
+/*--------------------------------------------------------------
+7.0 Media
+--------------------------------------------------------------*/
+@import "media/media";
+
+/*--------------------------------------------------------------
+8.0 Responsive
+--------------------------------------------------------------*/
+@import "site/primary/responsive";

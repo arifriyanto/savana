@@ -1,0 +1,158 @@
+.comments-area {
+	margin-bottom: 100px;
+	padding: 40px 30px 60px 30px;
+	font-size: 16px;
+	background: #ffffff;
+
+	p {
+		margin-bottom: 15px;
+	}
+
+	.comments-title {
+		margin-top: 0;
+		margin-bottom: 60px;
+		font-family: $font-family-sans-serif;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+}
+
+#showcomment {
+	margin-bottom: 30px;
+}
+
+.komentar {
+	display: none;
+}
+
+.comment-list {
+	list-style: none;
+	padding-left: 0;
+
+	li {
+		
+		&.comment {
+			margin-bottom: 30px;
+		}
+
+		&.bypostauthor {
+
+			.fn {
+				padding: 0 5px;
+				border-bottom: solid 2px #dddddd;
+				background: #fff9c0;
+			}
+		}
+
+		ol {
+			list-style: none;
+			padding-left: 55px;
+
+			&.children {
+				padding-top: 30px;
+
+				.avatar {
+					width: 40px;
+					height: 40px;
+					margin-right: 14px;
+					background: #cccccc;
+					border-radius: 50%;					
+				}
+
+				.comment-metadata,
+				.reply,
+				.comment-content {
+					padding-left: 55px;
+				}
+			}
+
+			li {
+
+				&.comment {
+					margin-bottom: 30px;
+				}
+			}
+		}
+
+		.avatar {
+			width: 40px;
+			height: 40px;
+			margin-right: 14px;
+			background: #cccccc;
+			border-radius: 50%;	
+		}
+
+		.fn {
+			margin-right: 15px;
+			font-family: $font-family-sans-serif;
+			font-size: 16px;
+			font-weight: 300;
+		}
+
+		.comment-metadata,
+		.reply,
+		.comment-content {
+			padding-left: 55px;
+		}
+
+		.post-time {
+			font-family: $font-family-sans-serif;
+			font-size: 16px;
+			font-weight: 300;
+			color: #dddddd;
+		}
+
+		.reply {
+			font-family: $font-family-sans-serif;
+			font-size: 16px;
+			font-weight: 300;
+			color: #333333;
+		}
+	}
+}
+
+.comment-respond {
+	padding-top: 60px;
+
+	p {
+		margin-bottom: 15px;
+	}
+
+	label {
+		display: block;
+		width: 100%;
+		font-family: $font-family-sans-serif;
+		font-weight: 300;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	textarea {
+		padding: 10px;
+		border: solid 1px #dddddd;
+		background-color: #fafafa;
+	}
+
+	input[type="submit"] {
+		padding: 10px 30px;
+		font-family: $font-family-sans-serif;
+		border: none;
+		color: #ffffff;
+		background-color: #333333;
+	}
+
+	textarea {
+		width: 100%;
+	}
+
+	.comment-notes {
+		font-family: $font-family-sans-serif;
+		font-weight: 300;
+	}
+
+	.required {
+		color: #c7254e;
+	}
+}
