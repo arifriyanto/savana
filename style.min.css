@@ -7,7 +7,7 @@ Description: Theme that you want. Maybe.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: borobudur
+Text Domain: savana
 Tags:
 
 This theme, like WordPress, is licensed under the GPL.
@@ -1475,7 +1475,7 @@ cite{display:block;padding-top:30px;font-family:"Open Sans",sans-serif;font-size
 .search-result{font-size:16px}
 .search-result .entry-title{margin-bottom:10px}
 .search-result .entry-link{margin:0}
-.comments-area{margin-bottom:100px;padding:40px 30px 60px 30px;font-size:16px;background:#fff}
+.comments-area{margin-bottom:0;padding:40px 30px 10px 30px;font-size:16px;background:#fff}
 .comments-area p{margin-bottom:15px}
 .comments-area .comments-title{margin-top:0;margin-bottom:60px;font-family:"Open Sans",sans-serif;font-size:14px;font-weight:700;text-transform:uppercase}
 #showcomment{margin-bottom:30px}
