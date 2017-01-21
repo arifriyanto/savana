@@ -61,9 +61,9 @@ get_header(); ?>
 									// the_post_navigation();
 
 									// If comments are open or we have at least one comment, load up the comment template.
-									if ( comments_open() || get_comments_number() ) :
-										comments_template();
-									endif;
+									// if ( comments_open() || get_comments_number() ) :
+									// 	comments_template();
+									// endif;
 
 								endwhile; // End of the loop.
 								?>
@@ -71,7 +71,13 @@ get_header(); ?>
 
 							<div class="entry-footer">
                                 <div class="entry-author clearfix">
-                                    <img class="avatar" src="images/avatar.jpg" alt="">
+                                    <?php 
+                                        $author_url         = esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) );
+                                        $author_avatar      = get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'wpex_author_bio_avatar_size', 75 ) );
+                                    ?>
+                                    <?php if ( $author_avatar ) { ?>
+                                    <?php echo $author_avatar; ?>
+                                    <?php } ?>
                                     <div class="author-description">
                                         <h3 class="author-name"><?php echo get_the_author_meta('nickname'); ?></h3>
                                         <p>
@@ -80,10 +86,12 @@ get_header(); ?>
                                             poutine 90's kitsch waistcoat vegan meggings cliche tacos irony craft beer.
                                              Whatever sriracha echo park selvage.
                                         </p>                                                
-                                        <a class="author-link" href="#"><i class="fa fa-globe"></i> www.arifriyato.com</a>
+                                        <a class="author-link" href="<?php echo esc_url( $author_url ); ?>"><i class="fa fa-globe"></i> <?php echo esc_url( $author_url ); ?></a>
                                     </div>
                                 </div><!-- end entry-author -->                                        
                             </div><!-- end entry-footer --> 
+
+                            <?php comments_template( '', true ); ?>
 
                         </div><!-- end entry-wrapper -->
 
